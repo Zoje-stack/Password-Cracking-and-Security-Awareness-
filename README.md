@@ -32,7 +32,14 @@ The following passwords were tested:
 > Note: `ohiozoje` was not cracked using the default dictionary attack.  
 > This does not mean it is secure — it is a personal name and could be cracked with a targeted/custom wordlist.
 
+## Lab Demonstration (Visual Evidence)
 
+The screenshot below shows the complete end-to-end workflow on a single page:
+- Original weak passwords
+- Generated MD5 hashes
+- Successful password cracking using John the Ripper
+
+[![Password Cracking Workflow](Password%20Cracking%20Workflow.png)](https://github.com/Zoje-stack/Password-Cracking-and-Security-Awareness-/blob/2c94a20e94eb7121679b87a135fb123fce94b81c/Password%20Cracking%20Workflow.png)
 
 ### Hash Generation
 Passwords were hashed using MD5 to demonstrate weak hashing.  
@@ -45,6 +52,13 @@ Hashes were saved in `clean_hashes.txt`.
 - RockYou wordlist was used to simulate a real-world attack
 - Cracked passwords were displayed using `john --show`
 
+## Dictionary Attack Simulation (RockYou Wordlist)
+
+To simulate a real-world attack scenario, the widely used RockYou wordlist was employed.
+
+[![RockYou Wordlist](RockYou%20Wordlist.png)](https://github.com/Zoje-stack/Password-Cracking-and-Security-Awareness-/blob/2c94a20e94eb7121679b87a135fb123fce94b81c/RockYou%20Wordlist.png)
+
+The RockYou wordlist contains millions of real leaked passwords, making it a realistic tool attackers use to exploit weak credentials.
 
 ## Results Summary
 
@@ -58,7 +72,6 @@ Hashes were saved in `clean_hashes.txt`.
 **Result:**  
 > 3 out of 4 passwords were cracked using a basic dictionary attack.
 
----
 
 ## Key Findings
 - Dictionary attacks quickly crack common and predictable passwords
@@ -67,7 +80,6 @@ Hashes were saved in `clean_hashes.txt`.
 - Security depends on entropy, complexity, and unpredictability
 - SOC teams need to monitor password practices and detect weak password patterns
 
----
 
 ## Security Recommendations
 - Avoid passwords based on:
